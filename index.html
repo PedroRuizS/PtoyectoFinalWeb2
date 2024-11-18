@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto Final</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="loginDiv">
+        <h2 id="textoInicio">Inicio de Sesion</h2>
+        <input type="text" class="usuario" placeholder="Usuario" required>
+        <input type="password" class="contraseña" placeholder="Contraseña" required>
+        <button type="submit" class="submitUsuario"> Entrar </button>
+        <p>¿No tienes una cuenta?</p>
+        <button class="crearCuenta"> Crear una Cuenta</button>
+    </div>
+    <form id="registroDiv" style="display: none;">
+        <h2>Registro</h2>
+        <input type="text" id="registroUsuario" placeholder="Usuario" required>
+        <input type="password" id="registroContraseña" placeholder="Contraseña" required>
+        <select id="registroRol">
+          <option value="comprador">Comprador</option>
+          <option value="vendedor">Vendedor</option>
+        </select>
+        <button type="submit" class="submitRegistro">Registrarse</button>
+      </form>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
