@@ -4,32 +4,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Proyecto Final</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
+
+
+
+<header class="header">
+  <a href="#" class="logo"><h2>logo</h2></a>
+  <div class="header-right">
+    <a href="#" class="cart">Carrito</a>
+    <a href="#" class="login">Iniciar Sesión</a>
+  </div>
+</header>
+
+
+
 <body>
-    <div id="loginDiv">
+    <div class="loginDiv">
         <h2 id="textoInicio">Inicio de Sesion</h2>
         <input type="text" class="usuario" placeholder="Usuario" required>
         <input type="password" class="contraseña" placeholder="Contraseña" required>
         <button type="submit" class="submitUsuario"> Entrar </button>
         <p>¿No tienes una cuenta?</p>
-        <button class="crearCuenta"> Crear una Cuenta</button>
-    </div>
-    <form id="registroDiv" style="display: none;">
-        <h2>Registro</h2>
-        <input type="text" id="registroUsuario" placeholder="Usuario" required>
-        <input type="password" id="registroContraseña" placeholder="Contraseña" required>
-        <select id="registroRol">
-          <option value="0">Comprador</option>
-          <option value="1">Vendedor</option>
-        </select>
-        <button type="submit" class="submitRegistro">Registrarse</button>
-        <p>¿Ya tienes una cuenta?</p>
-        <button type="submit" class="inicioSesion">Iniciar Sesion</button>
+        <button onclick="window.location.href='registro.html'">Crear una Cuenta</button>
+      </div>
 
-      </form>
-    </div>
-    <script src="js/script.js"></script>
+
+    <script src="js/login.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bcryptjs"></script>
 
 </body>

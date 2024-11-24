@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto Final</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+
+
+<header class="header">
+  <a href="#" class="logo"><h2>logo</h2></a>
+  <div class="header-right">
+    <a href="#" class="cart">Carrito</a>
+    <a href="#" class="login">Iniciar Sesión</a>
+  </div>
+</header>
+
+
+<div class="registroDiv" >
+    <h2>Registro</h2>
+    <input type="text" id="registroUsuario" placeholder="Usuario" required>
+    <input type="password" id="registroContraseña" placeholder="Contraseña" required>
+    <select id="registroRol">
+      <option value="0">Comprador</option>
+      <option value="1">Vendedor</option>
+    </select>
+    <button type="submit" class="submitRegistro">Registrarse</button>
+    <p>¿Ya tienes una cuenta?</p>
+    <button onclick="window.location.href='index.html'">Iniciar Sesión</button>
+
+  </div>
+
+
+    <script src="js/registro.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bcryptjs"></script>
+
+</body>
+</html>
