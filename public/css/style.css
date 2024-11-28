@@ -256,6 +256,7 @@ a {
 }
 .producto__imagen {
   width: 30rem;
+  max-height: 18rem;
   border-radius: 2rem;
 }
 .producto__precio {
@@ -379,6 +380,9 @@ input[type="submit"] {
 }
 .carrito__img img {
   width: 25rem;
+}
+.carrito__descripcion{
+  text-align: center;
 }
 .carrito__subtotal {
   background-color: var(--fondo-seccion);
