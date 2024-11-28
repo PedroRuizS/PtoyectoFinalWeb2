@@ -36,11 +36,12 @@
         </div>
         <form class="entradas" action="">
           <label for="">Correo</label>
-          <input type="text" placeholder="hola@hola.com" />
+          <input type="text" placeholder="usuario@hola.com" />
           <label for="">Contraseña</label>
           <input type="password" />
-
+          <button class="googleLogin">Iniciar sesión con Google</button>
           <input class="entradas__btn" type="submit" value="Continuar" />
+          <p>No tienes una cuenta? <a href="crearCuenta.html">Crear Cuenta</a></p>
         </form>
         <p class="terminos">
           Al continuar, aceptas las Condiciones de Uso y el Aviso de privacidad
@@ -88,6 +89,9 @@
         </div>
       </div>
     </footer>
-    <script src="js/app.js"></script>
+    <script type="module" src="js/login.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.17.2/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.17.2/firebase-auth-compat.js"></script>
+
   </body>
 </html>
