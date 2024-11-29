@@ -10,6 +10,7 @@ cargarEventListeners();
 function cargarEventListeners() {
   /* Agregamos un cursos presionando el btn */
   listaProductos.addEventListener("click", agregarProducto);
+  
 
   /* Eliminamos cursos del carrito */
   carrito.addEventListener("click", eliminarProducto);
@@ -37,6 +38,7 @@ function agregarProducto(e) {
   if (e.target.classList.contains("producto__btn")) {
     const productoSeleccionado = e.target.parentElement;
     leerDatosProducto(productoSeleccionado);
+    const resultMessage =  "Tu producto se ha agregado al carrito";
   }
 }
 

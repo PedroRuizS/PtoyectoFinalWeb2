@@ -74,9 +74,9 @@ a {
 }
 .carrito__header {
   display: none; /* Oculto por defecto */
-  position: absolute;
-  top: 100%;
-  left: 0;
+  position: fixed;
+  top: auto;
+  left: auto;
   background: white;
   border: 1px solid #ddd;
   padding: 2rem;
@@ -119,7 +119,7 @@ a {
 }
 
 /* Media Query para pantallas de 992px o más */
-@media (min-width: 992px) {
+@media (min-width: 500px) {
   .carrito:hover .carrito__header {
     display: block; /* Aparece al pasar el mouse en pantallas grandes */
   }
@@ -263,9 +263,11 @@ a {
   font-weight: bold;
   font-size: 2.5rem;
 }
-.producto__btn {
+.producto__btn:hover {
   display: block;
-  width: 100%;
+  width: 60%;
+  background-color: #ffa600; /* Cambia ligeramente el color al pasar el ratón */
+  cursor: pointer; /* Cambia el cursor a pointer */
 }
 @media (min-width: 768px) {
   .productos__section {
