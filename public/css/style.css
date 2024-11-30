@@ -1,8 +1,8 @@
 :root {
-  --primary: #8bd8bd;
+  --primary: #F4AFAB;
   --color-font: #243665;
-  --fondo-seccion: #f5f5f5;
-  --color-btn: #f4b942;
+  --fondo-seccion: #F7EDF0;
+  --color-btn: #F4F482;
 }
 html {
   box-sizing: border-box;
@@ -32,7 +32,7 @@ a {
 
 /* HEADER */
 .header {
-  background-color: #8bd8bd;
+  background-color: #f6ee78;
   padding: 1rem;
 }
 .logo__tienda {
