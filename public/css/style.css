@@ -253,6 +253,10 @@ a {
   border-radius: 2rem;
   background-color: var(--primary);
   padding: 1rem;
+  
+}
+.producto__card:hover {
+  background-color: #f87171; /* Cambia el color al pasar el cursor */
 }
 .producto__imagen {
   width: 30rem;
@@ -268,6 +272,27 @@ a {
   width: 60%;
   background-color: #ffa600; /* Cambia ligeramente el color al pasar el ratón */
   cursor: pointer; /* Cambia el cursor a pointer */
+}
+
+.mensaje-agregado {
+  display: none;  /* Ocultamos el mensaje por defecto */
+  position: fixed;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #4fe6b4;
+  color: white;
+  padding: 1rem 2rem;
+  border-radius: 0.5rem;
+  font-size: 2rem;
+  z-index: 1000;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.mensaje-agregado.show {
+  display: block;
+  opacity: 1;  /* Hacemos visible el mensaje */
 }
 @media (min-width: 768px) {
   .productos__section {

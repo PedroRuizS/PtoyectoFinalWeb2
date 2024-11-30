@@ -3,14 +3,14 @@ const contenedorCarrito = document.querySelector(".carrito__contenedor");
 const vaciarCarritoBtn = document.querySelector(".carrito__borrar");
 const listaProductos = document.querySelector(".productos__section");
 const actualizarTotal = document.querySelector(".carrito__precio-total");
+const mensajeAgregado = document.getElementById("mensaje-agregado");  // Div del mensaje
 let articulosCarrito = [];
 
 cargarEventListeners();
 
 function cargarEventListeners() {
-  /* Agregamos un cursos presionando el btn */
+  /* Agregamos un curso presionando el btn */
   listaProductos.addEventListener("click", agregarProducto);
-  
 
   /* Eliminamos cursos del carrito */
   carrito.addEventListener("click", eliminarProducto);
@@ -38,7 +38,14 @@ function agregarProducto(e) {
   if (e.target.classList.contains("producto__btn")) {
     const productoSeleccionado = e.target.parentElement;
     leerDatosProducto(productoSeleccionado);
-    const resultMessage =  "Tu producto se ha agregado al carrito";
+
+    // Mostrar el mensaje de "Producto agregado al carrito"
+    mensajeAgregado.classList.add("show");
+
+    // Ocultar el mensaje después de 1 segundo
+    setTimeout(() => {
+      mensajeAgregado.classList.remove("show");
+    }, 1000);
   }
 }
 
@@ -102,7 +109,7 @@ function carritoProductos() {
 
   articulosCarrito.forEach((producto) => {
     const productoAgregar = document.createElement("div");
-    productoAgregar.innerHTML = `
+    productoAgregar.innerHTML = ` 
         <div class = "carrito__canasta"> 
             <img src="${producto.imagen}" alt="imagenProducto">
             <p class="carrito__descripcion">${producto.descripcion}</p>
